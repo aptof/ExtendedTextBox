@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28010.2041
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExtendedTextBox", "ExtendedTextBox\ExtendedTextBox.csproj", "{BBCC8E0F-DC28-4FA9-989E-3C3E23563666}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExtendedTextBoxDemo", "ExtendedTextBoxDemo\ExtendedTextBoxDemo.csproj", "{71741FB3-4BCC-4C8B-92F0-0B5ACCEB21FE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BBCC8E0F-DC28-4FA9-989E-3C3E23563666}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BBCC8E0F-DC28-4FA9-989E-3C3E23563666}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BBCC8E0F-DC28-4FA9-989E-3C3E23563666}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BBCC8E0F-DC28-4FA9-989E-3C3E23563666}.Release|Any CPU.Build.0 = Release|Any CPU
+		{71741FB3-4BCC-4C8B-92F0-0B5ACCEB21FE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{71741FB3-4BCC-4C8B-92F0-0B5ACCEB21FE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{71741FB3-4BCC-4C8B-92F0-0B5ACCEB21FE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{71741FB3-4BCC-4C8B-92F0-0B5ACCEB21FE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F43AAF27-4A76-472B-B3F1-5E0EC8897FA1}
+	EndGlobalSection
+EndGlobal
