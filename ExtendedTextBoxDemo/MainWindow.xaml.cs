@@ -24,5 +24,10 @@ namespace ExtendedTextBoxDemo
         {
             InitializeComponent();
         }
+
+        private void CustomControl1_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
+        }
     }
 }

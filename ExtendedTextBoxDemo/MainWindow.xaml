@@ -4,9 +4,10 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ExtendedTextBoxDemo"
+        xmlns:aptof="http://www.aptof.com/"
         mc:Ignorable="d"
-        Title="MainWindow" Height="400" Width="600">
+        Title="MainWindow" Height="300" Width="500">
     <Grid>
-        
+        <aptof:NumericBox VerticalAlignment="Top" HorizontalAlignment="Left" Width="150" Margin="50" Text="145" TextChanged="CustomControl1_TextChanged"/>
     </Grid>
 </Window>

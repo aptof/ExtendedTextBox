@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{BBCC8E0F-DC28-4FA9-989E-3C3E23563666}</ProjectGuid>
+    <ProjectGuid>{477F05AE-6ECC-4939-9522-F6FAFA169986}</ProjectGuid>
     <OutputType>library</OutputType>
     <RootNamespace>Aptof.Controls</RootNamespace>
-    <AssemblyName>ExtendedTextBox</AssemblyName>
+    <AssemblyName>Aptof.Controls</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
@@ -52,9 +52,11 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
+    <Compile Include="NumericBox.cs">
+      <SubType>Code</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="CurrencyTextBox.cs" />
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>

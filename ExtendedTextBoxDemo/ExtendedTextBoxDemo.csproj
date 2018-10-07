@@ -94,5 +94,11 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Aptof.Controls\Aptof.Controls.csproj">
+      <Project>{477f05ae-6ecc-4939-9522-f6fafa169986}</Project>
+      <Name>Aptof.Controls</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

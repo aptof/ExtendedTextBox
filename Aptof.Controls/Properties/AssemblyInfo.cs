@@ -8,14 +8,14 @@ using System.Windows.Markup;
 // General Information about an assembly is controlled through the following
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("ExtendedTextBox")]
-[assembly: AssemblyDescription("Some text boxes which are missing form microsoft wpf")]
+[assembly: AssemblyTitle("Aptof.Controls")]
+[assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("APTOF")]
-[assembly: AssemblyProduct("ExtendedTextBox")]
+[assembly: AssemblyCompany("")]
+[assembly: AssemblyProduct("Aptof.Controls")]
 [assembly: AssemblyCopyright("Copyright ©  2018")]
-[assembly: AssemblyTrademark("APTOF")]
-[assembly: AssemblyCulture("en-IN")]
+[assembly: AssemblyTrademark("")]
+[assembly: AssemblyCulture("")]
 
 // Setting ComVisible to false makes the types in this assembly not visible 
 // to COM components.  If you need to access a type in this assembly from 
@@ -58,3 +58,4 @@ using System.Windows.Markup;
 
 [assembly: XmlnsPrefix("http://www.aptof.com/", "aptof")]
 [assembly: XmlnsDefinition("http://www.aptof.com/", "Aptof.Controls")]
+

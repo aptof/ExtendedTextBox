@@ -16,11 +16,11 @@ using System.Windows.Shapes;
 namespace Aptof.Controls
 {
     
-    public class CurrencyTextBox : TextBox
+    public class NumericBox : TextBox
     {
-        static CurrencyTextBox()
+        static NumericBox()
         {
-            DefaultStyleKeyProperty.OverrideMetadata(typeof(CurrencyTextBox), new FrameworkPropertyMetadata(typeof(CurrencyTextBox)));
+            DefaultStyleKeyProperty.OverrideMetadata(typeof(NumericBox), new FrameworkPropertyMetadata(typeof(NumericBox)));
         }
     }
 }
