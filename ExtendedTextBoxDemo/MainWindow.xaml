@@ -1,13 +1,17 @@
-﻿<Window x:Class="ExtendedTextBoxDemo.MainWindow"
+﻿<Controls:MetroWindow x:Class="ExtendedTextBoxDemo.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ExtendedTextBoxDemo"
         xmlns:aptof="http://www.aptof.com/"
+        xmlns:Controls="http://metro.mahapps.com/winfx/xaml/controls"
         mc:Ignorable="d"
         Title="MainWindow" Height="300" Width="500">
     <Grid>
-        <aptof:NumericBox VerticalAlignment="Top" HorizontalAlignment="Left" Width="150" Margin="50" Text="145" TextChanged="CustomControl1_TextChanged"/>
+        <TextBlock FontSize="16" Text="Number Box" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="50"/>
+        <aptof:NumberBox FontSize="16" VerticalAlignment="Top" HorizontalAlignment="Left" Width="150" Margin="200,50,0,0" Number="1001" NumberChanged="NumberBox_NumberChanged"/>
+        <TextBlock FontSize="16" Text="Int Box" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="50,100"/>
+        <aptof:CurrencyBox FontSize="16" VerticalAlignment="Top" HorizontalAlignment="Left" Width="150" Margin="200,100,0,0" />
     </Grid>
-</Window>
+</Controls:MetroWindow>
