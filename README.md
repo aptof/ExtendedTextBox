@@ -1,8 +1,9 @@
-/# ExtendedTextBox
+# ExtendedTextBox
 Missing Text Boxes which are not available in microsoft's WPF.
 
-## Getting Started
+## Installation
 You can install it directly from nuget.org
+* [Aptof.Controls](https://www.nuget.org/packages/Aptof.Controls/)
 
 ## Examples
 ```
@@ -18,7 +19,7 @@ You can install it directly from nuget.org
     .........
 ```
 ## Important Information
-Kindly note tha Number of NumberBox is string and Value of CurrecyBox is Decimal
+Kindly note that Number of NumberBox is string and Value of CurrecyBox is Decimal
 
 ## Information
 Works great with mahapps metro
