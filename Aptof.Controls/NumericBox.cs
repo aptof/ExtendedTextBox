@@ -39,6 +39,27 @@ namespace Aptof.Controls
             }
         }
 
+        public static readonly DependencyProperty LengthProperty = DependencyProperty.Register(
+            "Length", typeof(int), typeof(NumberBox),
+            new FrameworkPropertyMetadata(-1, FrameworkPropertyMetadataOptions.BindsTwoWayByDefault, new PropertyChangedCallback(LengthPropertyChanged)));
+
+        public int Length
+        {
+            get => (int)GetValue(LengthProperty);
+            set => SetValue(LengthProperty, value);
+        }
+
+        private static void LengthPropertyChanged(DependencyObject d, DependencyPropertyChangedEventArgs e)
+        {
+            if (d is NumberBox nb)
+            {
+                if((int)e.NewValue < nb.Number.Length)
+                {
+                    nb.Number = nb.Number.Substring(0, (int)e.NewValue);
+                }
+            }
+        }
+
         #endregion
 
         #region Constructors
@@ -92,7 +113,14 @@ namespace Aptof.Controls
 
         private void TextBox_PreviewKeyDown(object sender, KeyEventArgs e)
         {
-            if(IsAllowedKey(e.Key))
+            if(IsNumberKey(e.Key))
+            {
+                if (Length < 0 || Length > Number.Length)
+                    e.Handled = false;
+                else
+                    e.Handled = true;
+            }
+            else if(IsControlKey(e.Key))
             {
                 e.Handled = false;
             }
@@ -135,7 +163,7 @@ namespace Aptof.Controls
 
 
 
-        private bool IsAllowedKey(Key key)
+        private bool IsNumberKey(Key key)
         {
             return key == Key.D0 ||
                 key == Key.D1 ||
@@ -156,8 +184,13 @@ namespace Aptof.Controls
                 key == Key.NumPad6 ||
                 key == Key.NumPad7 ||
                 key == Key.NumPad8 ||
-                key == Key.NumPad9 ||
-                key == Key.Back ||
+                key == Key.NumPad9;
+                
+        }
+
+        private bool IsControlKey(Key key)
+        {
+            return key == Key.Back ||
                 key == Key.Left ||
                 key == Key.Right ||
                 key == Key.Delete;

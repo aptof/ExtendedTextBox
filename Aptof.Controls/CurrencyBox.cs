@@ -97,17 +97,17 @@ namespace Aptof.Controls
         {
             var tb = sender as TextBox;
 
-            if (Value < 0 && tb.GetBindingExpression(TextBox.TextProperty).ParentBinding.StringFormat == "C")
-            {
+            //if (Value < 0 && tb.GetBindingExpression(TextBox.TextProperty).ParentBinding.StringFormat == "C")
+            //{
                 // If a negative number and a StringFormat of "C" is used, then
                 // place the caret before the closing paren.
-                tb.CaretIndex = tb.Text.Length - 1;
-            }
-            else
-            {
+              //  tb.CaretIndex = tb.Text.Length - 1;
+            //}
+            //else
+            //{
                 // Keep the caret at the end
                 tb.CaretIndex = tb.Text.Length;
-            }
+            //}
         }
 
         private void TextBox_PreviewMouseDown(object sender, MouseButtonEventArgs e)
