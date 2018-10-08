@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>Aptof.Controls</id>
+    <version>1.0.0.0</version>
+    <title>Aptof.Contorls</title>
+    <authors>John McClane</authors>
+    <owners>APTOF</owners>
+    <licenseUrl>http://opensource.org/licenses/MS-PL</licenseUrl>
+    <projectUrl>https://github.com/aptof/ExtendedTextBox</projectUrl>
+    
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <description>Custom Text Boxes</description>
+    <releaseNotes>Initial Release</releaseNotes>
+    <copyright>Copyright 2018</copyright>
+    <tags>NumberBox, NumericBox, CurrencyBox</tags>
+  </metadata>
+</package>
