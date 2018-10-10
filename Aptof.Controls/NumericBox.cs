@@ -97,12 +97,12 @@ namespace Aptof.Controls
 
         private void TextBox_PreviewKeyDown(object sender, KeyEventArgs e)
         {
-            if (Number == null)
-                return;
+            
             if(IsNumberKey(e.Key))
             {
-                if (Length < 0 || Length > Number.Length)
+                if (Length < 0 || Number == null || Length > Number.Length)
                     e.Handled = false;
+                
                 else
                     e.Handled = true;
             }
