@@ -23,8 +23,11 @@ Length property of NumberBox limit the length of number i.e. if Length is set to
 Kindly note that Number of NumberBox is string and Value of CurrecyBox is Decimal
 
 ## Information
-Works great with mahapps metro
+Works great with mahapps metro theme
+
+## Release Note
+Version 1.0.5
+Added Global Currency Support
 
 ## Issue
 Mahapps TextBoxHelper not supported yet.
-CurrecyBox shows only Indian Currecy Symbols. Global support comming soon...
