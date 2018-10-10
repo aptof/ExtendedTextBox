@@ -75,7 +75,7 @@ namespace Aptof.Controls
             textBinding.RelativeSource = new RelativeSource(RelativeSourceMode.Self);
             textBinding.UpdateSourceTrigger = UpdateSourceTrigger.PropertyChanged;
             textBinding.StringFormat = "C";
-            textBinding.ConverterCulture = new System.Globalization.CultureInfo("en-IN");
+            textBinding.ConverterCulture = CultureInfo.CurrentCulture;
 
             BindingOperations.SetBinding(this, TextBox.TextProperty, textBinding);
 
