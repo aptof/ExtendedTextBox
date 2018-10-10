@@ -24,16 +24,7 @@ namespace ExtendedTextBoxDemo
         public MainWindow()
         {
             InitializeComponent();
-        }
-
-        private void CustomControl1_TextChanged(object sender, TextChangedEventArgs e)
-        {
-
-        }
-
-        private void NumberBox_NumberChanged(object sender, RoutedEventArgs e)
-        {
-
+            this.DataContext = new MainWondowViewModel();
         }
     }
 }

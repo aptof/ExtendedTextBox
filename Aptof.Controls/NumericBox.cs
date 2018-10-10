@@ -23,7 +23,7 @@ namespace Aptof.Controls
         #region Dependency Propereties
         public static readonly DependencyProperty NumberProperty = DependencyProperty.Register(
             "Number", typeof(string), typeof(NumberBox),
-            new FrameworkPropertyMetadata("0", FrameworkPropertyMetadataOptions.BindsTwoWayByDefault, new PropertyChangedCallback(NumberPropertyChanged)));
+            new FrameworkPropertyMetadata("", FrameworkPropertyMetadataOptions.BindsTwoWayByDefault, new PropertyChangedCallback(NumberPropertyChanged)));
 
         public string Number
         {
@@ -88,8 +88,6 @@ namespace Aptof.Controls
 
             this.CaretIndex = this.Text.Length;
             this.PreviewKeyDown += TextBox_PreviewKeyDown;
-            this.PreviewMouseDown += TextBox_PreviewMouseDown;
-            this.PreviewMouseUp += TextBox_PreviewMouseUp;
             this.ContextMenu = null;
         }
 
@@ -97,22 +95,10 @@ namespace Aptof.Controls
 
         #region Subscribed Events
 
-        private void TextBox_PreviewMouseDown(object sender, MouseButtonEventArgs e)
-        {
-            // Prevent changing the caret index
-            e.Handled = true;
-            (sender as TextBox).Focus();
-        }
-
-        void TextBox_PreviewMouseUp(object sender, MouseButtonEventArgs e)
-        {
-            // Prevent changing the caret index
-            e.Handled = true;
-            (sender as TextBox).Focus();
-        }
-
         private void TextBox_PreviewKeyDown(object sender, KeyEventArgs e)
         {
+            if (Number == null)
+                return;
             if(IsNumberKey(e.Key))
             {
                 if (Length < 0 || Length > Number.Length)
