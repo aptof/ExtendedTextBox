@@ -179,7 +179,8 @@ namespace Aptof.Controls
             return key == Key.Back ||
                 key == Key.Left ||
                 key == Key.Right ||
-                key == Key.Delete;
+                key == Key.Delete ||
+                key == Key.Tab;
         }
         #endregion
     }
