@@ -18,7 +18,7 @@ namespace ExtendedTextBoxDemo
         }
 
 
-        private string _number;
+        private string _number = "123";
         public string Number
         {
             get => _number;
@@ -27,6 +27,20 @@ namespace ExtendedTextBoxDemo
                 if(value != _number)
                 {
                     _number = value;
+                    NotifyPropertyChanged();
+                }
+            }
+        }
+
+        private decimal _amount = 10.05M;
+        public decimal Amount
+        {
+            get => _amount;
+            set
+            {
+                if (value != _amount)
+                {
+                    _amount = value;
                     NotifyPropertyChanged();
                 }
             }

@@ -22,10 +22,11 @@ namespace Aptof.Controls
 
 
         public static readonly DependencyProperty ValueProperty = DependencyProperty.Register(
-            "Number",
+            "Value",
             typeof(decimal),
             typeof(CurrencyBox),
-            new FrameworkPropertyMetadata(0M, FrameworkPropertyMetadataOptions.BindsTwoWayByDefault));
+            new FrameworkPropertyMetadata(0M, FrameworkPropertyMetadataOptions.BindsTwoWayByDefault, new PropertyChangedCallback(ValuePropertyChanged)));
+
         public decimal Value
         {
             get
@@ -71,7 +72,7 @@ namespace Aptof.Controls
 
             // Bind Text to Number with the specified StringFormat
             var textBinding = new Binding();
-            textBinding.Path = new PropertyPath("Number");
+            textBinding.Path = new PropertyPath("Value");
             textBinding.RelativeSource = new RelativeSource(RelativeSourceMode.Self);
             textBinding.UpdateSourceTrigger = UpdateSourceTrigger.PropertyChanged;
             textBinding.StringFormat = "C";
