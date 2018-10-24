@@ -26,11 +26,13 @@ Kindly note that Number of NumberBox is string and Value of CurrecyBox is Decima
 Works great with mahapps metro theme
 
 ## Release Note
-Version 1.0.6
-null bug fixes
+Version 1.0.8: Bug Fixes: CurrencyBox Value property does not support binding.
 
-Version 1.0.5
-Added Global Currency Support
+Version 1.0.7: Bug Fixes: NumberBox does not support tab.
+
+Version 1.0.6: null bug fixes
+
+Version 1.0.5: Added Global Currency Support
 
 ## Issue
 Mahapps TextBoxHelper not supported yet.
