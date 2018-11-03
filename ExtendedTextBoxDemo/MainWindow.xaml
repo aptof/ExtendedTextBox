@@ -12,6 +12,6 @@
         <TextBlock FontSize="16" Text="Number Box" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="50"/>
         <aptof:NumberBox Length="7" FontSize="16" VerticalAlignment="Top" HorizontalAlignment="Left" Width="150" Margin="200,50,0,0" Number="{Binding Number}"/>
         <TextBlock FontSize="16" Text="Currency Box" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="50,100"/>
-        <aptof:CurrencyBox FontSize="16" VerticalAlignment="Top" HorizontalAlignment="Left" Width="150" Margin="200,100,0,0" Value="{Binding Amount}"/>
+        <aptof:CurrencyBox FontSize="16" VerticalAlignment="Top" HorizontalAlignment="Left" Width="150" Margin="200,100,0,0" Value="{Binding Amount, Mode=TwoWay}"/>
     </Grid>
 </Controls:MetroWindow>
